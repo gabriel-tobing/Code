@@ -14,7 +14,7 @@ const NavbarLayout = () => {
             />
           </div>
         </Link>
-        <div className="max-w-[420px] mx-3 flex-auto">
+        <div className="hidden md:block max-w-[420px] mx-3 flex-auto">
           <div className="flex flex-1 relative">
             <input
               type="text"

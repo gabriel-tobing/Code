@@ -20,7 +20,7 @@ import Terms from "../../assets/Sidebar/assignment.png";
 const SidebarLeftContent = () => {
   return (
     <div className="hidden md:block">
-      <div className="bg-white p-4 shadow-card rounded-auto border border-form">
+      <div className="bg-white p-4 shadow-card rounded-auto">
         <h2 className="leading-tight mb-4 text-lg text-base-90 font-semibold">
           CODE Community is a community of <span>1,154,656</span> amazing
           developers

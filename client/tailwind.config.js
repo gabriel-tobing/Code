@@ -16,6 +16,7 @@ export default {
         "border-2": "calc(0.5em - 2px) 0.5em",
         "outline-2": "calc(0.5rem - 2px) calc(1rem - 2px)",
         "post-detail": "2rem 4rem 0 4rem",
+        "user-detail": "calc(0.75rem / 2)",
       },
       colors: {
         body: "rgb(23, 23, 23)",
@@ -44,6 +45,7 @@ export default {
         "link-hover": "rgb(47, 58, 178)",
         "link-secondary": "#717171",
         "post-name": "rgba(0, 0, 0, 0.035)",
+        "card-hover": "rgba(23, 23, 23, 0.05)",
       },
       fontSize: {
         "2xs": "0.8rem",
