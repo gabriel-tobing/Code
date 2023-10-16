@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import { BiSearch } from "react-icons/bi";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const NavbarLayout = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-20 shadow-sm bg-white">
       <div className="max-w-[1280px] h-14 px-4 mx-auto flex items-center">
+        <button type="button" className="inline-block md:hidden p-2">
+          <AiOutlineMenu className="text-link text-2xl mr-2" />
+        </button>
         <Link to="/">
           <div className="max-w-[200px] rounded-md overflow-hidden">
             <img
@@ -30,11 +34,19 @@ const NavbarLayout = () => {
           </div>
         </div>
         <div className="ml-auto h-full flex items-center">
-          <div className="flex">
+          <div className="flex items-center">
+            <Link to="/search">
+              <button
+                type="button"
+                className="group inline-block md:hidden p-2 bg-[#E5E5E5] mr-1 hover:bg-bg-hover rounded-md"
+              >
+                <BiSearch className="text-link text-2xl group-hover:text-branded" />
+              </button>
+            </Link>
             <Link>
               <button
                 type="button"
-                className="block mr-2 py-2 px-4 bg-transparent rounded-[0.375rem] text-link text-3sm font-normal hover:bg-bg-hover hover:text-link-hover hover:underline"
+                className="hidden md:block mr-2 py-2 px-4 bg-transparent rounded-[0.375rem] text-link text-3sm font-normal hover:bg-bg-hover hover:text-link-hover hover:underline"
               >
                 Log in
               </button>

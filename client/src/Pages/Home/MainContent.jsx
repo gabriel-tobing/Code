@@ -17,8 +17,8 @@ import fireEmoticon from "../../assets/Emoticon/fire.png";
 const MainContent = () => {
   return (
     <div>
-      <div className="p-2 px-3 mb-2">
-        <div className="flex items-center py-1 my-button-content">
+      <div className="p-2 px-0 md:px-3 mb-2">
+        <div className="flex items-center pt-2 my-button-content">
           <button
             type="button"
             className="block py-2 px-3 rounded-md hover:bg-white text-base-70 text-[1.03rem] font-semibold hover:text-branded" // Kalo active text-base-100
@@ -161,7 +161,7 @@ const MainContent = () => {
             </div>
             <div className="pl-story-content">
               <Link>
-                <h2 className="text-body text-[1.35rem] font-semibold leading-tight hover:text-branded mb-1">
+                <h2 className="text-body text-[1.15rem] md:text-[1.35rem] font-semibold leading-tight hover:text-branded mb-1">
                   Hacktoberfest 2023 is Here!
                 </h2>
               </Link>
@@ -306,7 +306,7 @@ const MainContent = () => {
             </div>
             <div className="pl-story-content">
               <Link to="/post-detail">
-                <h2 className="text-body text-[1.35rem] font-semibold leading-tight hover:text-branded mb-1">
+                <h2 className="text-body text-[1.15rem] md:text-[1.35rem] font-semibold leading-tight hover:text-branded mb-1">
                   This Is Weirdest JavaScript Operator
                 </h2>
               </Link>
@@ -437,7 +437,7 @@ const MainContent = () => {
             </div>
             <div className="pl-story-content">
               <Link to="/post-detail">
-                <h2 className="text-body text-[1.35rem] font-semibold leading-tight hover:text-branded mb-1">
+                <h2 className="text-body text-[1.15rem] md:text-[1.35rem] font-semibold leading-tight hover:text-branded mb-1">
                   Pattern matching - Dealing with the if statement nightmare
                 </h2>
               </Link>

@@ -7,6 +7,7 @@ import "./index.css";
 import HomePage from "./Pages/Home/HomePage";
 import PostDetailPage from "./Pages/PostDetail/PostDetailPage";
 import ProfilePage from "./Pages/Profile/ProfilePage";
+import SearchPage from "./Pages/Search/SearchPage";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <ProfilePage />,
+  },
+  {
+    path: "/search",
+    element: <SearchPage />,
   },
 ]);
 
