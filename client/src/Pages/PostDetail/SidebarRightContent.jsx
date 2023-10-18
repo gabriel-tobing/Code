@@ -6,7 +6,7 @@ const SidebarRightContent = () => {
   return (
     <div>
       <div className="grid gap-y-4">
-        <div className="bg-white rounded-auto overflow-hidden shadow-[0_0_0_1px_rgba(23, 23, 23, 0.05)]">
+        <div className="bg-white rounded-auto overflow-hidden shadow-card">
           <div className="border-t-[2rem] border-[#987094] rounded-t-auto"></div>
           <div className="grid gap-y-4 p-4">
             <div className="flex -mt-8">
@@ -88,7 +88,7 @@ const SidebarRightContent = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-auto shadow-[0_0_0_1px_rgba( 23, 23, 23 , 0.05)]">
+        <div className="bg-white rounded-auto shadow-card">
           <div className="py-3 px-4 border-b border-icon">
             <h3 className="text-2lg sm:text-3lg text-base-90 font-semibold leading-tight text-left">
               More from{" "}

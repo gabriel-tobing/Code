@@ -1,12 +1,25 @@
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { BiSearch } from "react-icons/bi";
 import { AiOutlineMenu } from "react-icons/ai";
 
+import { openSidebarMenu } from "../../../features/SidebarMenu/sidebarMenuSlice";
+
 const NavbarLayout = () => {
+  const dispatch = useDispatch();
+
+  const handleOpenSidebarMenu = () => {
+    dispatch(openSidebarMenu());
+  };
+
   return (
     <div className="fixed top-0 left-0 right-0 z-20 shadow-sm bg-white">
       <div className="max-w-[1280px] h-14 px-0 md:px-2 lg:px-4 mx-auto flex items-center">
-        <button type="button" className="inline-block md:hidden p-2">
+        <button
+          type="button"
+          className="inline-block md:hidden p-2"
+          onClick={handleOpenSidebarMenu}
+        >
           <AiOutlineMenu className="text-link text-2xl mr-2" />
         </button>
         <Link to="/">
@@ -43,7 +56,7 @@ const NavbarLayout = () => {
                 <BiSearch className="text-link text-2xl group-hover:text-branded" />
               </button>
             </Link>
-            <Link>
+            <Link to="/login">
               <button
                 type="button"
                 className="hidden md:block mr-2 py-2 px-4 bg-transparent rounded-[0.375rem] text-link text-3sm font-normal hover:bg-bg-hover hover:text-link-hover hover:underline"
@@ -51,7 +64,7 @@ const NavbarLayout = () => {
                 Log in
               </button>
             </Link>
-            <Link>
+            <Link to="/register">
               <button
                 type="button"
                 className="block mr-2 py-2 px-4 bg-transparent rounded-[0.375rem] border border-branded p-border-1 text-branded text-3sm font-medium hover:bg-branded hover:border-link-hover hover:text-white hover:underline"

@@ -1,40 +1,6 @@
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-import { TbHeartPlus } from "react-icons/tb";
-import { BsBookmark, BsImage } from "react-icons/bs";
-import { BiMessageRounded } from "react-icons/bi";
-import { FaEllipsis } from "react-icons/fa6";
-import {
-  RiFileCopy2Fill,
-  RiHeading,
-  RiDoubleQuotesL,
-  RiHeart2Line,
-} from "react-icons/ri";
-import { HiOutlineEllipsisVertical } from "react-icons/hi2";
-import {
-  AiOutlineBold,
-  AiOutlineItalic,
-  AiOutlineLink,
-  AiOutlineOrderedList,
-  AiOutlineUnorderedList,
-  AiOutlineThunderbolt,
-} from "react-icons/ai";
-import { FiCode } from "react-icons/fi";
-import { GoCodeSquare } from "react-icons/go";
-import { LuChevronsUpDown, LuChevronsDownUp } from "react-icons/lu";
 
 import NavbarLayout from "../../components/Layouts/Navbar/NavbarLayout";
-
-import loveEmoticon from "../../assets/Emoticon/love.png";
-import unicornEmoticon from "../../assets/Emoticon/unicorn.png";
-import explodingHeadEmoticon from "../../assets/Emoticon/exploding-head.png";
-import raisingHandsEmoticon from "../../assets/Emoticon/raising-hands.png";
-import fireEmoticon from "../../assets/Emoticon/fire.png";
-
-import post1 from "../../assets/Post/post-1.jpg";
-
-import user1 from "../../assets/User/user-1.jpg";
-import user2 from "../../assets/User/user-2.jpg";
 
 import SidebarLeftContent from "./SidebarLeftContent";
 import MainContent from "./MainContent";
