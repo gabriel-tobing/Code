@@ -15,7 +15,10 @@ export default {
         "border-1": "calc(0.5rem - 1px) calc(1rem - 1px)",
         "border-2": "calc(0.5em - 2px) 0.5em",
         "outline-2": "calc(0.5rem - 2px) calc(1rem - 2px)",
-        "post-detail": "2rem 4rem 0 4rem",
+        "post-detail-xs": "0.75rem 0.75rem 0 0.75rem",
+        "post-detail-sm": "1.25rem 1.25rem 0 1.25rem",
+        "post-detail-md": "2rem 3rem 0 3rem",
+        "post-detail-lg": "2rem 4rem 0 4rem",
         "user-detail": "calc(0.75rem / 2)",
       },
       colors: {

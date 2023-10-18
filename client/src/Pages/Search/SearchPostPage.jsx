@@ -131,7 +131,7 @@ const SearchPostPage = () => {
               <p className="text-tertier text-xs leading-none px-1">Oct 2</p>
             </div>
           </div>
-          <div className="pl-story-content">
+          <div className="pl-0 md:pl-story-content">
             <Link>
               <h2 className="text-body text-[1.15rem] md:text-[1.35rem] font-semibold leading-tight hover:text-branded mb-1">
                 Hacktoberfest 2023 is Here!
@@ -218,7 +218,10 @@ const SearchPostPage = () => {
                       </div>
                       <div className="ml-[1em]">
                         <p className="text-base-80 text-3xs font-normal hover:text-base-100 leading-none whitespace-nowrap">
-                          <span className="text-5xs">158</span> reactions
+                          <span className="text-5xs">158</span>{" "}
+                          <span className="hidden sm:inline-block">
+                            reactions
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -235,7 +238,10 @@ const SearchPostPage = () => {
                       </div>
                       <div className="ml-1">
                         <p className="text-base-80 text-3xs font-normal hover:text-base-100 leading-none whitespace-nowrap">
-                          <span className="text-5xs">4</span> comments
+                          <span className="text-5xs">4</span>{" "}
+                          <span className="hidden sm:inline-block">
+                            comments
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -276,7 +282,7 @@ const SearchPostPage = () => {
               <p className="text-tertier text-xs leading-none">Oct 2</p>
             </div>
           </div>
-          <div className="pl-story-content">
+          <div className="pl-0 md:pl-story-content">
             <Link to="/post-detail">
               <h2 className="text-body text-[1.15rem] md:text-[1.35rem] font-semibold leading-tight hover:text-branded mb-1">
                 This Is Weirdest JavaScript Operator
@@ -349,7 +355,10 @@ const SearchPostPage = () => {
                       </div>
                       <div className="ml-[1em]">
                         <p className="text-base-80 text-3xs font-normal hover:text-base-100 leading-none whitespace-nowrap">
-                          <span className="text-5xs">158</span> reactions
+                          <span className="text-5xs">158</span>{" "}
+                          <span className="hidden sm:inline-block">
+                            reactions
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -366,7 +375,10 @@ const SearchPostPage = () => {
                       </div>
                       <div className="ml-1">
                         <p className="text-base-80 text-3xs font-normal hover:text-base-100 leading-none whitespace-nowrap">
-                          <span className="text-5xs">4</span> comments
+                          <span className="text-5xs">4</span>{" "}
+                          <span className="hidden sm:inline-block">
+                            comments
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -407,7 +419,7 @@ const SearchPostPage = () => {
               <p className="text-tertier text-xs leading-none">Oct 2</p>
             </div>
           </div>
-          <div className="pl-story-content">
+          <div className="pl-0 md:pl-story-content">
             <Link to="/post-detail">
               <h2 className="text-body text-[1.15rem] md:text-[1.35rem] font-semibold leading-tight hover:text-branded mb-1">
                 Pattern matching - Dealing with the if statement nightmare
@@ -466,7 +478,10 @@ const SearchPostPage = () => {
                       </div>
                       <div className="ml-[1em]">
                         <p className="text-base-80 text-3xs font-normal hover:text-base-100 leading-none whitespace-nowrap">
-                          <span className="text-5xs">119</span> reactions
+                          <span className="text-5xs">119</span>{" "}
+                          <span className="hidden sm:inline-block">
+                            reactions
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -483,7 +498,10 @@ const SearchPostPage = () => {
                       </div>
                       <div className="ml-1">
                         <p className="text-base-80 text-3xs font-normal hover:text-base-100 leading-none whitespace-nowrap">
-                          <span className="text-5xs">2</span> comments
+                          <span className="text-5xs">2</span>{" "}
+                          <span className="hidden sm:inline-block">
+                            comments
+                          </span>
                         </p>
                       </div>
                     </div>

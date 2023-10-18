@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 const NavbarLayout = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-20 shadow-sm bg-white">
-      <div className="max-w-[1280px] h-14 px-4 mx-auto flex items-center">
+      <div className="max-w-[1280px] h-14 px-0 md:px-2 lg:px-4 mx-auto flex items-center">
         <button type="button" className="inline-block md:hidden p-2">
           <AiOutlineMenu className="text-link text-2xl mr-2" />
         </button>
@@ -27,7 +27,7 @@ const NavbarLayout = () => {
             />
             <button
               type="submit"
-              className="group flex items-center absolute top-[2px] left-auto right-[2px] bottom-[2px] py-2 px-4 rounded-md text-sm hover:bg-bg-hover align-top"
+              className="group flex items-center absolute top-[2px] left-auto right-[2px] bottom-[2px] p-2 rounded-md text-sm hover:bg-bg-hover align-top"
             >
               <BiSearch className="group-hover:text-branded-border text-button text-2xl" />
             </button>

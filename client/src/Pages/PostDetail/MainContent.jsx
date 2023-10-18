@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { BsImage } from "react-icons/bs";
-import { BiMessageRounded } from "react-icons/bi";
+import { BsImage, BsArrowsCollapse } from "react-icons/bs";
+import { BiMessageRounded, BiBookBookmark } from "react-icons/bi";
 import { FaEllipsis } from "react-icons/fa6";
 import { RiHeading, RiDoubleQuotesL, RiHeart2Line } from "react-icons/ri";
 import { HiOutlineEllipsisVertical } from "react-icons/hi2";
@@ -11,6 +11,9 @@ import {
   AiOutlineOrderedList,
   AiOutlineUnorderedList,
   AiOutlineThunderbolt,
+  AiOutlineUnderline,
+  AiOutlineStrikethrough,
+  AiOutlineQuestionCircle,
 } from "react-icons/ai";
 import { FiCode } from "react-icons/fi";
 import { GoCodeSquare } from "react-icons/go";
@@ -26,13 +29,13 @@ import user2 from "../../assets/User/user-2.jpg";
 
 const MainContent = () => {
   return (
-    <div className="rounded-auto bg-white overflow-hidden">
+    <div className="rounded-auto bg-white overflow-hidden shadow-card">
       <div className="max-h-post-detail">
         <Link>
           <img src={post1} alt="" className="w-full h-full object-contain" />
         </Link>
       </div>
-      <div className="p-post-detail">
+      <div className="p-post-detail-xs sm:p-post-detail-sm md:p-post-detail-md lg:p-post-detail-lg">
         <div className="flex items-center mb-5">
           <div className="w-10 h-10 rounded-full overflow-hidden">
             <img src={user1} alt="" className="w-full h-full object-cover" />
@@ -113,20 +116,20 @@ const MainContent = () => {
         </div>
         <div className="py-4">
           <div>
-            <p className="text-body text-[1.1rem] font-normal mb-5 leading-normal md:leading-relaxed">
+            <p className="text-body text-[1rem] font-normal mb-5 leading-normal md:leading-relaxed">
               But am I alone in this boat, gently rowing down the river of
               resistance against the *TypeScript * tide? Or are there others who
               share this sentiment 😍? Or better yet, are there knights in
               shining armor ready to defend TypeScript's honor and educate the
               peasants like me on the path of righteous coding 🤣🤣?
             </p>
-            <p className="text-body text-[1.1rem] font-normal mb-5 leading-normal md:leading-relaxed">
+            <p className="text-body text-[1.05rem] font-normal mb-5 leading-normal md:leading-relaxed">
               <strong>I love Javascript but Hate Typescript!</strong>
             </p>
-            <h2 className="text-[1.3em] font-bold leading-tight my-title">
+            <h2 className="text-[1.2em] font-bold leading-tight my-title">
               Here are some discussion nuggets to chew on:
             </h2>
-            <ul className="pl-5 list-disc text-body text-[1.1rem] font-normal">
+            <ul className="pl-5 list-disc text-body text-[1rem] font-normal">
               <li>
                 Why is TypeScript hailed as the savior of big projects? Is it
                 really the unsung hero in the sprawling chaos of JavaScript?
@@ -143,7 +146,7 @@ const MainContent = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-base-10 py-4 px-16">
+      <div className="border-t border-base-10 py-3 px-3 md:px-5 lg:py-8 lg:px-16">
         <div className="flex justify-between items-center mb-6">
           <div className="flex items-center">
             <h2 className="text-base sm:text-4lg leading-tight sm:leading-normal text-base-90 font-bold">
@@ -166,17 +169,17 @@ const MainContent = () => {
         <div className="mb-8">
           <form>
             <div className="flex">
-              <div className="w-8 h-8 rounded-full overflow-hidden shrink-0 mr-2">
+              <div className="w-6 h-6 md:w-8 md:h-8 rounded-full overflow-hidden shrink-0 mr-2">
                 <img
                   src={user1}
                   alt=""
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col flex-auto min-w-0 border border-form rounded-md overflow-hidden">
+              <div className="flex flex-col flex-auto min-w-0 border border-form rounded-md">
                 <textarea
                   placeholder="Add to the discussion"
-                  className="block w-full text-body text-4sm font-normal whitespace-pre-wrap outline-none p-[0.5em] resize-y h-[128px] max-h-[40vh] placeholder:text-body placeholder:text-4sm placeholder:font-normal"
+                  className="block w-full rounded-md text-body text-4sm font-normal whitespace-pre-wrap outline-none p-[0.5em] resize-y h-[128px] max-h-[40vh] placeholder:text-body placeholder:text-4sm placeholder:font-normal"
                 ></textarea>
                 <div className="border-t border-form">
                   <div className="flex justify-between items-center">
@@ -185,76 +188,142 @@ const MainContent = () => {
                         type="button"
                         className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
                       >
-                        <AiOutlineBold className="text-button text-2xl group-hover:text-branded-border" />
+                        <AiOutlineBold className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
                       </button>
                       <button
                         type="button"
                         className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
                       >
-                        <AiOutlineItalic className="text-button text-2xl group-hover:text-branded-border" />
+                        <AiOutlineItalic className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
                       </button>
                       <button
                         type="button"
                         className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
                       >
-                        <AiOutlineLink className="text-button text-2xl group-hover:text-branded-border" />
+                        <AiOutlineLink className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
                       </button>
                       <button
                         type="button"
                         className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
                       >
-                        <AiOutlineOrderedList className="text-button text-2xl group-hover:text-branded-border" />
+                        <AiOutlineOrderedList className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
                       </button>
                       <button
                         type="button"
                         className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
                       >
-                        <AiOutlineUnorderedList className="text-button text-2xl group-hover:text-branded-border" />
+                        <AiOutlineUnorderedList className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
+                      </button>
+                      <button
+                        type="button"
+                        className="group hidden md:block p-2 rounded-md hover:bg-bg-hover mr-1"
+                      >
+                        <RiHeading className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
+                      </button>
+                      <button
+                        type="button"
+                        className="group hidden md:block p-2 rounded-md hover:bg-bg-hover mr-1"
+                      >
+                        <RiDoubleQuotesL className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
+                      </button>
+                      <button
+                        type="button"
+                        className="group hidden md:block lg:hidden xl:block p-2 rounded-md hover:bg-bg-hover mr-1"
+                      >
+                        <FiCode className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
+                      </button>
+                      <button
+                        type="button"
+                        className="group hidden md:block lg:hidden xl:block p-2 rounded-md hover:bg-bg-hover mr-1"
+                      >
+                        <GoCodeSquare className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
+                      </button>
+                      <button
+                        type="button"
+                        className="group hidden md:block lg:hidden xl:block p-2 rounded-md hover:bg-bg-hover mr-1"
+                      >
+                        <AiOutlineThunderbolt className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
                       </button>
                       <button
                         type="button"
                         className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
                       >
-                        <RiHeading className="text-button text-2xl group-hover:text-branded-border" />
-                      </button>
-                      <button
-                        type="button"
-                        className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
-                      >
-                        <RiDoubleQuotesL className="text-button text-2xl group-hover:text-branded-border" />
-                      </button>
-                      <button
-                        type="button"
-                        className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
-                      >
-                        <FiCode className="text-button text-2xl group-hover:text-branded-border" />
-                      </button>
-                      <button
-                        type="button"
-                        className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
-                      >
-                        <GoCodeSquare className="text-button text-2xl group-hover:text-branded-border" />
-                      </button>
-                      <button
-                        type="button"
-                        className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
-                      >
-                        <AiOutlineThunderbolt className="text-button text-2xl group-hover:text-branded-border" />
-                      </button>
-                      <button
-                        type="button"
-                        className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
-                      >
-                        <BsImage className="text-button text-2xl group-hover:text-branded-border" />
+                        <BsImage className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
                       </button>
                     </div>
-                    <div>
+                    <div className="relative group">
                       <button
                         type="button"
-                        className="group block p-2 rounded-md hover:bg-bg-hover"
+                        className=" block p-2 rounded-md hover:bg-bg-hover"
                       >
-                        <HiOutlineEllipsisVertical className="text-button text-2xl group-hover:text-branded-border" />
+                        <HiOutlineEllipsisVertical className="text-button text-2lg md:text-[1.3rem] lg:text-2xl group-hover:text-branded-border" />
                       </button>
+                      <div className="hidden group-hover:block absolute bottom-full right-0 top-full md:-translate-y-1/2 z-10">
+                        <div className="sm:max-w-[360px] md:w-full p-2 bg-white shadow-emoticon rounded-md">
+                          <div className="grid grid-flow-col grid-rows-2 md:flex md:items-center">
+                            <button
+                              type="button"
+                              className="group block md:hidden p-2 rounded-md hover:bg-bg-hover mr-1"
+                            >
+                              <RiHeading className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                            <button
+                              type="button"
+                              className="group block md:hidden p-2 rounded-md hover:bg-bg-hover mr-1"
+                            >
+                              <RiDoubleQuotesL className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                            <button
+                              type="button"
+                              className="group block md:hidden lg:block xl:hidden p-2 rounded-md hover:bg-bg-hover mr-1"
+                            >
+                              <FiCode className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                            <button
+                              type="button"
+                              className="group block md:hidden lg:block xl:hidden p-2 rounded-md hover:bg-bg-hover mr-1"
+                            >
+                              <GoCodeSquare className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                            <button
+                              type="button"
+                              className="group block md:hidden lg:block xl:hidden p-2 rounded-md hover:bg-bg-hover mr-1"
+                            >
+                              <AiOutlineThunderbolt className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                            <button
+                              type="button"
+                              className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
+                            >
+                              <AiOutlineUnderline className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                            <button
+                              type="button"
+                              className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
+                            >
+                              <AiOutlineStrikethrough className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                            <button
+                              type="button"
+                              className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
+                            >
+                              <BsArrowsCollapse className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                            <button
+                              type="button"
+                              className="group block p-2 rounded-md hover:bg-bg-hover mr-1"
+                            >
+                              <BiBookBookmark className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                            <button
+                              type="button"
+                              className="group block p-2 rounded-md hover:bg-bg-hover"
+                            >
+                              <AiOutlineQuestionCircle className="text-button text-2lg md:text-[1.3rem] lg:text-2xl" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -401,7 +470,10 @@ const MainContent = () => {
                     <span className="text-link-secondary text-sm">Oct 4</span>
                   </div>
                   <div>
-                    <button type="button">
+                    <button
+                      type="button"
+                      className="block p-2 hover:bg-bg-hover rounded-md"
+                    >
                       <FaEllipsis />
                     </button>
                   </div>
@@ -571,7 +643,10 @@ const MainContent = () => {
                     <span className="text-link-secondary text-sm">Oct 4</span>
                   </div>
                   <div>
-                    <button type="button">
+                    <button
+                      type="button"
+                      className="block p-2 hover:bg-bg-hover rounded-md"
+                    >
                       <FaEllipsis />
                     </button>
                   </div>

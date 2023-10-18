@@ -19,9 +19,9 @@ const SearchPage = () => {
       </Helmet>
       <NavbarLayout />
       <div className="absolute top-14 left-0 right-0 bg-main">
-        <div className="max-w-[1024px] mx-auto p-4">
+        <div className="max-w-[1024px] mx-auto p-0 py-4 md:p-4">
           <div className="flex justify-between items-center mb-0 sm:mb-4 flex-wrap sm:flex-nowrap">
-            <div className="block w-full md:hidden">
+            <div className="block w-full md:hidden px-4 md:px-0 mb-2 sm:mb-0">
               <div className="flex flex-1 relative">
                 <input
                   type="text"
@@ -62,47 +62,47 @@ const SearchPage = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-container-2 gap-x-4">
-            <div className="h-max p-3 sm:p-0 overflow-x-auto">
+            <div className="h-max pt-1 pb-4 sm:pt-0 sm:pb-0 overflow-x-auto">
               <div className="flex flex-row sm:flex-col">
                 <button
                   type="button"
-                  className="block w-max sm:w-full text-base-90 p-2 rounded-md bg-white hover:bg-white text-left text-4sm font-bold hover:text-branded-border"
+                  className="block w-max sm:w-full text-base-90 py-2 px-3 rounded-md bg-white hover:bg-white text-left text-3sm font-bold hover:text-branded-border"
                 >
                   Posts
                 </button>
                 <button
                   type="button"
-                  className="block w-max sm:w-full text-base-90 p-2 rounded-md hover:bg-white text-left text-4sm font-normal hover:text-branded-border"
+                  className="block w-max sm:w-full text-base-90 py-2 px-3 rounded-md hover:bg-white text-left text-3sm font-normal hover:text-branded-border"
                 >
                   Podcasts
                 </button>
                 <button
                   type="button"
-                  className="block w-max sm:w-full text-base-90 p-2 rounded-md hover:bg-white text-left text-4sm font-normal hover:text-branded-border"
+                  className="block w-max sm:w-full text-base-90 py-2 px-3 rounded-md hover:bg-white text-left text-3sm font-normal hover:text-branded-border"
                 >
                   People
                 </button>
                 <button
                   type="button"
-                  className="block w-max sm:w-full text-base-90 p-2 rounded-md hover:bg-white text-left text-4sm font-normal hover:text-branded-border"
+                  className="block w-max sm:w-full text-base-90 py-2 px-3 rounded-md hover:bg-white text-left text-3sm font-normal hover:text-branded-border"
                 >
                   Organizations
                 </button>
                 <button
                   type="button"
-                  className="block w-max sm:w-full text-base-90 p-2 rounded-md hover:bg-white text-left text-4sm font-normal hover:text-branded-border"
+                  className="block w-max sm:w-full text-base-90 py-2 px-3 rounded-md hover:bg-white text-left text-3sm font-normal hover:text-branded-border"
                 >
                   Tags
                 </button>
                 <button
                   type="button"
-                  className="block w-max sm:w-full text-base-90 p-2 rounded-md hover:bg-white text-left text-4sm font-normal hover:text-branded-border"
+                  className="block w-max sm:w-full text-base-90 py-2 px-3 rounded-md hover:bg-white text-left text-3sm font-normal hover:text-branded-border"
                 >
                   Comments
                 </button>
               </div>
             </div>
-            <div>
+            <div className="pt-1 sm:pt-0">
               <SearchPostPage />
               {/* <SearchPodcastPage /> */}
               {/* <SearchPeoplePage /> */}
